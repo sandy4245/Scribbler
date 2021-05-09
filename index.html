@@ -95,6 +95,41 @@
         </div>
       </div>
     </header>
+    <section class="posts-btn-wrapper">
+        <button onclick="location.href='./html/postslist.html'" class="outer-btns">
+          All Posts
+        </button>
+        <button id="createPostBtn" class="outer-btns">Create Post</button>
+        <!-- Create Post Modal -->
+        <div id="createPostModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-heading">Pen Your Post</h2>
+              <span id="closeCreatePost" class="close-icon">
+                <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control"id="title" placeholder="Enter title of your post"/>
+                </div>
+                <div class="form-group">
+                  <label for="contents">Contents</label>
+                  <textarea type="text" class="form-control contents" id="contents" placeholder="Enter the contents of your post"></textarea>
+                </div>
+                <div class="create-btn-div">
+                  <button type="submit" class="btn btn-success" id="createPostApi">
+                    Create
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script src='./scripts/common.js'> </script>
     <script src='./scripts/index.js'> </script>
